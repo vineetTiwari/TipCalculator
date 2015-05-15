@@ -17,6 +17,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
+
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+  UIViewController *tipViewController = [storyboard instantiateInitialViewController];
+
+  self.window.backgroundColor = [UIColor whiteColor];
+  self.window.rootViewController = tipViewController;
+
+  [self.window makeKeyAndVisible];
+  
   return YES;
 }
 
