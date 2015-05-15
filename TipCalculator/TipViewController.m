@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+  [self preferredStatusBarStyle];
   self.tipPercentageArray = @[@0.15, @0.20, @0.25];
 
   while (self.tipPercentageSegmentControl.numberOfSegments > 0) {
@@ -63,6 +65,11 @@
 
   NSLog(@"did tap the calculate button.");
   [self calculateTipAndUpdateLabel];
+  [self.billAmountField resignFirstResponder];
+}
+
+- (UIStatusBarStyle) preferredStatusBarStyle {
+  return UIStatusBarStyleLightContent;
 }
 
 
