@@ -7,7 +7,6 @@
         <!--Tip View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <viewController id="vXZ-lx-hvc" customClass="TipViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
@@ -70,7 +69,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$100" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afN-1h-mfQ">
                                 <rect key="frame" x="200" y="50" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.30588235289999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -82,6 +81,7 @@
                         <outlet property="totalAmountTextLabel" destination="B09-fk-GoM" id="Iop-IU-QOr"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4" y="104"/>
         </scene>
